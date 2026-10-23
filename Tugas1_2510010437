@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurul Hikmah</title>
+</head>
+<body>
+    <h1>Nurul Hikmah</h1>
+    <h2>NPM: 2510010437 | Kelas: 3A Nonreg</h2>
+
+    <hr>
+
+    <h3>Tentang Diri Saya</h3>
+    <p>
+        Halo, perkenalkan nama saya <strong>Nurul Hikmah</strong>.
+        Saya adalah seorang mahasiswa yang sedang menempuh pendidikan
+        di perguruan tinggi. Saya senang mempelajari hal-hal baru,
+        terutama yang berkaitan dengan teknologi dan komputer.
+    </p>
+
+    <h3>Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari </h3>
+    <p>
+        Saya mempelajari berbagai materi perkuliahan, termasuk pemrograman komputer.
+        Melalui perkuliahan, saya ingin meningkatkan pengetahuan,
+        keterampilan, dan kemampuan dalam menggunakan teknologi.
+    </p>
+
+    <h3>Hobi dan Cita-Cita</h3>
+    <p>
+        Hobi saya adalah mempelajari hal-hal baru dan mengembangkan
+        kemampuan diri. Saya bercita-cita menjadi pribadi yang sukses,
+        mandiri, dan mampu membanggakan keluarga.
+        <br>
+        Saya akan terus belajar dan berusaha untuk mencapai cita-cita saya.
+    </p>
+
+    <hr>
+
+    <p>Terima kasih telah mengunjungi halaman profil saya!</p>
+</body>
+</html>
+
+<!-- Dibuat oleh Nurul Hikmah pada 23 Oktober 2026 -->
