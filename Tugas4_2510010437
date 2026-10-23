@@ -1,0 +1,212 @@
+/* === WARNA DAN VARIABEL DASAR === */
+:root {
+    --primary-color: #1e293b;   /* Warna Slate Gelap */
+    --accent-color: #2563eb;    /* Warna Biru Modern */
+    --bg-color: #f8fafc;        /* Warna Latar Belakang */
+    --text-color: #334155;      /* Warna Teks Utama */
+}
+
+/* === ELEMEN & RESET DASAR === */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* === CLASS & CONTAINER === */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* === ID SELECTOR === */
+#main-header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+#main-footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+/* === DESCENDANT SELECTOR === */
+.blog-title {
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.main-nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.main-nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* === PSEUDO-CLASS (:hover) === */
+.main-nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Styling Artikel Utama */
+article {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.article-header h2 {
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.article-header time {
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* === CHILD SELECTOR (>) === */
+.article-body > p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+blockquote {
+    background-color: #f1f5f9;
+    border-left: 4px solid var(--accent-color);
+    margin: 20px 0;
+    padding: 15px 20px;
+    font-style: italic;
+}
+
+/* === PSEUDO-CLASS (:first-child) === */
+.feature-list li:first-child {
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.feature-list {
+    margin-bottom: 20px;
+}
+
+.external-links p {
+    margin: 5px 0;
+}
+
+.external-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.external-links a:hover {
+    text-decoration: underline;
+}
+
+.author-info {
+    margin-top: 30px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Saya - Artikel Menarik</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Nav -->
+    <header id="main-header">
+        <div class="container">
+            <h1 class="blog-title">Blog Saya</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#artikel">Artikel</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <article id="artikel-utama">
+            <header class="article-header">
+                <h2>Mengenal Pentingnya Desain Web yang Responsif dan Semantik</h2>
+                <time datetime="2026-06-06">6 Juni 2026</time>
+            </header>
+
+            <div class="article-body">
+                <p>Perkembangan teknologi web saat ini menuntut setiap pengembang untuk memperhatikan struktur HTML yang baik serta penerapan CSS yang rapi. Penggunaan elemen semantik tidak hanya membantu mesin pencari memahami isi halaman, tetapi juga meningkatkan aksesibilitas bagi pengguna penyandang disabilitas.</p>
+                
+                <p>Dalam membangun sebuah situs web modern, aspek estetika harus berjalan seiring dengan fungsionalitas. Pemilihan warna yang konsisten, tipografi yang nyaman dibaca, serta tata letak yang fleksibel menjadi kunci utama dalam menciptakan pengalaman pengguna yang memuaskan.</p>
+
+                <p>Selain itu, penggunaan CSS eksternal memungkinkan pemeliharaan kode yang jauh lebih efisien. Kita dapat memisahkan struktur konten dari gaya tampilannya, sehingga perubahan desain secara menyeluruh dapat dilakukan hanya dengan mengubah satu berkas CSS saja.</p>
+
+                <blockquote>
+                    "Desain bukan hanya apa yang terlihat dan terasa. Desain adalah bagaimana semuanya bekerja." — Steve Jobs
+                </blockquote>
+
+                <p>Berikut adalah beberapa komponen penting yang harus diperhatikan dalam styling:</p>
+                <ul class="feature-list">
+                    <li>Konsistensi palet warna minimal 3 warna utama.</li>
+                    <li>Penerapan tipografi menggunakan Google Fonts.</li>
+                    <li>Pengaturan spasi, line-height, dan batas lebar konten agar nyaman di mata.</li>
+                </ul>
+
+                <p>Untuk memperdalam wawasan Anda mengenai pengembangan web, Anda dapat mengunjungi beberapa referensi eksternal terpercaya di bawah ini:</p>
+                
+                <div class="external-links">
+                    <p>🔗 Baca selengkapnya di <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></p>
+                    <p>🔗 Pelajari standar web di <a href="https://www.w3schools.com" target="_blank">W3Schools</a></p>
+                    <p>🔗 Temukan inspirasi desain di <a href="https://dev.to" target="_blank">DEV Community</a></p>
+                </div>
+            </div>
+
+            <footer>
+                <p class="author-info">Ditulis oleh <strong>Admin Blog</strong></p>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Blog Saya. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
