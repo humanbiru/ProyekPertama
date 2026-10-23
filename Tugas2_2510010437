@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan Organisasi dan Hobi Saya</title>
+</head>
+<body>
+    <header>
+        <h1>Kegiatan Organisasi dan Hobi Saya</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a> |
+            <a href="kegiatan.html">Kegiatan</a> |
+            <a href="galeri.html">Galeri</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Selamat Datang</h2>
+            <p>Halo, nama saya <strong>Nurul Hikmah</strong>. Saya adalah mahasiswa yang senang belajar hal baru, bekerja sama, dan mengembangkan kemampuan diri melalui kegiatan positif.</p>
+            <p>Melalui halaman ini, saya ingin berbagi cerita tentang <em>kegiatan organisasi</em> dan hobi yang saya sukai. Saya percaya bahwa pengalaman, <mark>kerja sama</mark>, dan kedisiplinan dapat membantu saya menjadi pribadi yang lebih baik.</p>
+            <p>Saya juga tertarik mencoba berbagai aktivitas yang bermanfaat untuk menambah wawasan dan pengalaman.</p>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80" alt="Sekelompok teman berkumpul dan berbincang di luar ruangan" width="600">
+                <figcaption>Kebersamaan dan kerja sama dalam kegiatan bersama.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nurul Hikmah &amp; Kegiatan Positif</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Kegiatan Saya</title>
+</head>
+<body>
+    <header>
+        <h1>Daftar Kegiatan Saya</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a> |
+            <a href="kegiatan.html">Kegiatan</a> |
+            <a href="galeri.html">Galeri</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Kegiatan Berdasarkan Urutan Waktu</h2>
+            <p>Berikut contoh urutan kegiatan yang dapat saya lakukan untuk belajar, berorganisasi, dan mengembangkan hobi.</p>
+            <ol>
+                <li>
+                    <strong>Pagi:</strong> mempersiapkan diri, merapikan jadwal, dan mengikuti perkuliahan.
+                    <ul>
+                        <li>Mencatat materi penting.</li>
+                        <li>Menyelesaikan tugas yang mendekati tenggat waktu.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Siang:</strong> berdiskusi dengan teman dan mengerjakan tugas kelompok.
+                    <ul>
+                        <li>Membagi tugas dengan adil.</li>
+                        <li>Saling membantu jika ada materi yang belum dipahami.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Sore:</strong> meluangkan waktu untuk hobi dan kegiatan positif.
+                    <ul>
+                        <li>Mempelajari keterampilan baru.</li>
+                        <li>Berolahraga ringan atau membaca.</li>
+                    </ul>
+                </li>
+                <li><strong>Malam:</strong> mengevaluasi kegiatan harian dan mempersiapkan jadwal esok hari.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Nilai yang Dipelajari</h2>
+            <p>Setiap kegiatan mengajarkan tanggung jawab, disiplin, komunikasi, dan kemampuan bekerja sama.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nurul Hikmah</p>
+    </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kegiatan dan Hobi</title>
+</head>
+<body>
+    <header>
+        <h1>Galeri Kegiatan dan Hobi</h1>
+        <nav aria-label="Navigasi utama">
+            <a href="index.html">Beranda</a> |
+            <a href="kegiatan.html">Kegiatan</a> |
+            <a href="galeri.html">Galeri</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Foto Kegiatan</h2>
+            <p>Berikut tiga gambar ilustrasi yang menggambarkan kebersamaan, belajar, dan hobi.</p>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=700&q=80" alt="Sekelompok teman berkumpul di luar ruangan" width="450">
+                <figcaption>Kebersamaan bersama teman.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80" alt="Mahasiswa belajar dan berdiskusi bersama di meja" width="450">
+                <figcaption>Belajar dan berdiskusi untuk menambah pengetahuan.</figcaption>
+            </figure>
+            <figure>
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="Ilustrasi kegiatan hobi dan waktu luang" width="450">
+                <figcaption>Meluangkan waktu untuk kegiatan yang disukai.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Penutup</h2>
+            <p>Semoga galeri ini menggambarkan pentingnya kegiatan positif dalam kehidupan sehari-hari. Silakan kembali ke <a href="index.html">halaman beranda</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nurul Hikmah &amp; Galeri Saya &mdash; Terima kasih!</p>
+    </footer>
+</body>
+</html>
