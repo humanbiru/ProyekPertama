@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Produk Toko - Tugas 5</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 2. Navbar position:fixed di atas dengan nama toko & 3 link -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="store-name">TokoSerbaAda</h1>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Konten Utama (dengan kompensasi padding atas untuk navbar fixed) -->
+    <main class="main-content">
+        
+        <!-- 3. Elemen position:sticky (sub-judul kategori yang menempel saat scroll) -->
+        <div class="sticky-category">
+            <h2>Kategori: Produk Unggulan Minggu Ini</h2>
+        </div>
+
+        <section id="produk" class="product-section">
+            
+            <!-- Kartu Produk 1 -->
+            <div class="product-card">
+                <!-- Badge position:absolute dengan induk position:relative -->
+                <span class="badge badge-discount">Diskon 20%</span>
+                <!-- 4. Elemen overflow:hidden + border-radius (gambar membulat di dalam kartu) -->
+                <div class="image-wrapper">
+                    <img src="https://picsum.photos/300/200?random=1" alt="Sepatu Sneakers">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-name">Sepatu Sneakers Sporty</h3>
+                    <p class="product-price">Rp 450.000</p>
+                    <button class="buy-button">Beli</button>
+                </div>
+            </div>
+
+            <!-- Kartu Produk 2 -->
+            <div class="product-card">
+                <span class="badge badge-new">Baru</span>
+                <div class="image-wrapper">
+                    <img src="https://picsum.photos/300/200?random=2" alt="Jam Tangan Elegance">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-name">Jam Tangan Elegance</h3>
+                    <p class="product-price">Rp 850.000</p>
+                    <button class="buy-button">Beli</button>
+                </div>
+            </div>
+
+            <!-- Kartu Produk 3 -->
+            <div class="product-card">
+                <span class="badge badge-popular">Terlaris</span>
+                <div class="image-wrapper">
+                    <img src="https://picsum.photos/300/200?random=3" alt="Ransel Kasual Modern">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-name">Ransel Kasual Modern</h3>
+                    <p class="product-price">Rp 299.000</p>
+                    <button class="buy-button">Beli</button>
+                </div>
+            </div>
+
+            <!-- Kartu Produk 4 -->
+            <div class="product-card">
+                <span class="badge badge-discount">Diskon 15%</span>
+                <div class="image-wrapper">
+                    <img src="https://picsum.photos/300/200?random=4" alt="Headphone Wireless">
+                </div>
+                <div class="card-body">
+                    <h3 class="product-name">Headphone Wireless Bass</h3>
+                    <p class="product-price">Rp 520.000</p>
+                    <button class="buy-button">Beli</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Tambahan konten opsional untuk pengujian scroll yang cukup -->
+        <section class="extra-content">
+            <h3>Tentang Toko Kami</h3>
+            <p>TokoSerbaAda menyediakan berbagai macam produk berkualitas tinggi dengan harga terjangkau. Nikmati pengalaman berbelanja online terbaik dengan berbagai promo menarik setiap minggunya.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TokoSerbaAda. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+/* === RESET DAN BOX-SIZING === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* === NAVBAR (POSITION: FIXED) === */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e293b;
+    color: #ffffff;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.store-name {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* === MAIN CONTENT (DENGAN KOMPENSASI PADDING ATAS) === */
+.main-content {
+    padding-top: 80px; /* Kompensasi untuk navbar fixed agar konten tidak tertutup */
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+/* === STICKY ELEMENT (SUB-JUDUL KATEGORI) === */
+.sticky-category {
+    position: sticky;
+    top: 60px; /* Menempel tepat di bawah navbar fixed */
+    background-color: #3b82f6;
+    color: #ffffff;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    z-index: 900;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-category h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* === SEKSI & KARTU PRODUK (DISPLAY INLINE-BLOCK/LAYOUT) === */
+.product-section {
+    text-align: center; /* Membantu meratakan kartu bertipe inline-block */
+    margin-bottom: 40px;
+}
+
+.product-card {
+    display: inline-block;
+    vertical-align: top;
+    position: relative; /* Induk relative untuk badge position:absolute */
+    max-width: 240px;
+    width: 100%;
+    margin: 12px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition effect */
+    text-align: left;
+}
+
+/* === HOVER EFFECT PADA KARTU PRODUK === */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18); /* Box-shadow menebal */
+}
+
+/* === BADGE (POSITION: ABSOLUTE) === */
+.badge {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    z-index: 10;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.badge-discount {
+    background-color: #ef4444;
+}
+
+.badge-new {
+    background-color: #10b981;
+}
+
+.badge-popular {
+    background-color: #f59e0b;
+}
+
+/* === OVERFLOW HIDDEN + BORDER RADIUS PADA GAMBAR === */
+.image-wrapper {
+    overflow: hidden;
+    border-radius: 8px; /* Gambar membulat di dalam kartu */
+    width: 100%;
+    height: 160px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .image-wrapper img {
+    transform: scale(1.05); /* Efek zoom halus saat hover */
+}
+
+/* === DETAIL PRODUK & TOMBOL BELI === */
+.card-body {
+    margin-top: 15px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.buy-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition pada perubahan warna tombol */
+}
+
+.buy-button:hover {
+    background-color: #1d4ed8; /* Perubahan warna tombol saat hover */
+}
+
+/* === KONTEN TAMBAHAN & FOOTER === */
+.extra-content {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.extra-content h3 {
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: #94a3b8;
+    font-size: 14px;
+}
